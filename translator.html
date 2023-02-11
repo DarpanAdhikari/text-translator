@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="stylesheet" href="translator.css">
+  <link rel="icon" href="darpan.png">
+  <title>Drp-Translator</title>
+</head>
+<body>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    
+  <div class="container">
+    <div class="main-field">
+      <div class="input">
+        <textarea name="" id="from-text" placeholder="Enter Text to translate"></textarea>
+        <textarea name="" placeholder="Translation" id="to-text" readonly disabled></textarea>
+      </div>
+      <ul class="controls">
+        <li class="left-icons">
+          <div class="icons">
+            <i id="count"></i>
+            <i id="left-sound" class="fa fa-volume-up" title="Sound"></i>
+            <i id="copy-from" class="fa fa-paste" title="Paste Text"></i>
+          </div>
+          <select class="select-country" title="Select Language">
+          </select>
+        </li>
+        <div class="middle"><i class="fa fa-exchange-alt" title="Exchange"></i>
+        </div>
+        <li class="right-icons">
+          <select class="select-country" title="Select Language">
+          </select>
+          <div class="icons">
+            <i class="fa fa-qrcode" title="create QR code"></i>
+            <i class="fa fa-volume-up" title="Sound"></i>
+            <i class="fa fa-copy" title="Copy Text"></i>
+          </div>
+        </li>
+      </ul>
+    </div>
+<button class="translate-btn">Translate Text</button>
+<div class="qr-code">
+  <img src="" alt="">
+</div>
+<div class="fb-share-button"
+data-href="https://darpanadhikari.com.np"
+data-layout="button_count" style="float: right; margin-top: 10px;">
+  </div>
+</div>
+<a href="https://darpanadhikari.com.np" class="aboutDeveloper" title="Developer">
+<span class="fa fa-question"></span>
+</a>
+<footer>
+  <span><span>&#169;</span><span id="date"></span><a href="https://darpanadhikari.com.np"> DarpanAdhikari</a> || All right reserved</span>
+</footer>
+<script src="js &css/country.js"></script>
+<script src="js &css/translator.js"></script>
+</body>
+</html>
